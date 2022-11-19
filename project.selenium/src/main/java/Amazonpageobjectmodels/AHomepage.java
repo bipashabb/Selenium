@@ -18,6 +18,7 @@ public class AHomepage {
 		
 
 	}
+	// abcde
 	public void searchbar_sendkeys(String searchbar1) {
 		searchbar.click();
 		searchbar.sendKeys(searchbar1);
@@ -35,6 +36,9 @@ public class AHomepage {
 		this.driver= driver; 
 		PageFactory.initElements(driver, this);
 	}
-	
+
+	public void method() {
+		
+	}
 
 }
