@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests" thread-count="5">
+
+
+<test name="sprint 1-- chrome">
+<parameter name="Browser" value="Chrome"></parameter>
+<parameter name="Url" value="https:www.amazon.com"></parameter>
+
+<classes>
+
+
+<!-- <class name="TestNG.Amazon1"></class>--> <!--Amazon1-->
+<class name="TestNG.Amazon2"></class> <!-- Amazon2 -->
+
+</classes>
+</test> 
+</suite>

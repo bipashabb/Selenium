@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Facebook Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Facebook sign in Chrome(failed)">
+    <parameter name="Url" value="https://www.facebook.com"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="TestNG.Facebook_signInFunctionality">
+        <methods>
+          <include name="Screenshotss"/>
+          <include name="f" invocation-numbers="0 1"/>
+          <include name="Ibrowser"/>
+        </methods>
+      </class> <!-- TestNG.Facebook_signInFunctionality -->
+    </classes>
+  </test> <!-- Facebook sign in Chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Facebook sign in Edge(failed)">
+    <parameter name="Url" value="https://www.facebook.com"/>
+    <parameter name="Browser" value="Edge"/>
+    <classes>
+      <class name="TestNG.Facebook_signInFunctionality">
+        <methods>
+          <include name="Screenshotss"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="Ibrowser"/>
+        </methods>
+      </class> <!-- TestNG.Facebook_signInFunctionality -->
+    </classes>
+  </test> <!-- Facebook sign in Edge(failed) -->
+</suite> <!-- Failed suite [Facebook Regression] -->
